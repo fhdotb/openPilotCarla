@@ -1,5 +1,12 @@
+<p>
+This repository presents our comprehensive exploration of OpenPilot's Automated Lane Centering (ALC) system within the Carla simulator. We've conducted a detailed study of the ALC system's responses to various conditions, including dynamic weather and different target speeds. Our findings are demonstrated through recorded videos and CSV files, which illustrate the ALC system's operational methodology. For example, the ALC system proposes desired driving paths by identifying left and right lane lines. Our observation process includes tracking these detection results, expressed as probabilities. Each of these detection events is linked to a corresponding frame in the video, providing a clear visual representation of the ALC system's decision-making process.
+</p>
+
+
 <p><b>Data</b></p>
-<p>This folder contains extracted data and recorded videos from OpenPilot Software [<a href="https://github.com/commaai/openpilot">(1)</a>] in the Carla driving simulator [<a href="https://github.com/carla-simulator/carla">(2)</a>]. Carla's Town 04 was used as the driving environment for exploring and testing OpenPilot's behaviors. Town 04, which is a highway, provides a suitable environment for the Automated Lane Centering (ALC) functionalities of OpenPilot. Moreover, the collected data is categorized based on different weather conditions ('clear,' 'rainy'), with the self-driving vehicle (SDV) speed adjusted in various settings such as 25, 30, and 40 miles per hour.</p>
+<p>
+This folder contains extracted data and recorded videos from OpenPilot Software [<a href="https://github.com/commaai/openpilot">(1)</a>] in the Carla driving simulator [<a href="https://github.com/carla-simulator/carla">(2)</a>]. Carla's Town 04 was used as the driving environment for exploring and testing OpenPilot's behaviors. Town 04, which is a highway, provides a suitable environment for the Automated Lane Centering (ALC) functionalities of OpenPilot. Moreover, the collected data is categorized based on different weather conditions ('clear,' 'rainy'), with the self-driving vehicle (SDV) speed adjusted in various settings such as 25, 30, and 40 miles per hour.
+</p>
 
 <p><b>The structure of datasets (CSV files) is as follows:</b></p>
 
@@ -30,10 +37,14 @@
 </pre>
 
 <p><b>Python Scripts</b></p>
-<p>This folder contains Python scripts designed to extract OpenPilot behaviors and record videos within the Carla simulator. These scripts are based on the plug-in (bridge) provided by OpenPilot, which can be found at the following <a href="https://github.com/commaai/openpilot/blob/master/tools/sim/bridge.py">link</a>.</p>
+<p>
+This folder contains Python scripts designed to extract OpenPilot behaviors and record videos within the Carla simulator. These scripts are based on the plug-in (bridge) provided by OpenPilot, which can be found at the following <a href="https://github.com/commaai/openpilot/blob/master/tools/sim/bridge.py">link</a>.
+</p>
 
 <p><b>Demo</b></p>
-<p>The Jupyter notebook available at this <a href="https://git.soton.ac.uk/faa2n19/openpilotcarla/-/blob/master/Demo%20of%20analysing%20OpenPilot%20behaviours%20in%20Carla%20town%204.ipynb">link</a> provides a demonstration of the behavior of the OpenPilot software within the Carla Simulator environment.</p>
+<p>
+The Jupyter notebook available at this <a href="https://git.soton.ac.uk/faa2n19/openpilotcarla/-/blob/master/Demo%20of%20analysing%20OpenPilot%20behaviours%20in%20Carla%20town%204.ipynb">link</a> provides a demonstration of the behavior of the OpenPilot software within the Carla Simulator environment.
+</p>
 
 
 <p><b>Instructions to run the Jupyter notebook</b></p>
