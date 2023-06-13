@@ -1,4 +1,3 @@
-
 '''
 In this file, we examine the behaviors of OpenPilot, utilizing the original plugin provided by OpenPilot for the Carla simulator. We have incorporated several points:
 - policing_function: This function retrieves crucial attributes of the autopilot software, such as the probabilities of staying in the left or right lane.
