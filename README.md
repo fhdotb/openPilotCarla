@@ -4,33 +4,37 @@
 <p><b>The structure of datasets (CSV files) is as follows:</b></p>
 
 <pre>
-'time': # The timestamp of when a driving decision is made, corresponding to the recorded data. 
-'is_openpilot_engaged': # checks whether OpenPilot is engaged
-'target position': # position the ego-vehicle attempts to reach
-'currentspeed': # current speed of the SDV in its environment
-'currentVelocity': # current velocity of the SDV
-'current_vehicle_angle': # current steering angle of the physical wheels (between 70 to -70)
-'old_vehicle_angle': # detects previous steering angle of the SDV
-'max_steer_vehicle_angle': # maximum steering angle that the SDV's wheels can reach
-'steer_rate_limit': # acceptable amount of change between the old and current steering angle
-'current_steer': # current yaw angle (between 1 to -1)
+'time': The timestamp of when a driving decision is made, corresponding to the recorded data. 
+'is_openpilot_engaged': checks whether OpenPilot is engaged
+'target position': position the ego-vehicle attempts to reach
+'currentspeed': current speed of the SDV in its environment
+'currentVelocity': current velocity of the SDV
+'current_vehicle_angle': current steering angle of the physical wheels (between 70 to -70)
+'old_vehicle_angle': detects previous steering angle of the SDV
+'max_steer_vehicle_angle': maximum steering angle that the SDV's wheels can reach
+'steer_rate_limit': acceptable amount of change between the old and current steering angle
+'current_steer': current yaw angle (between 1 to -1)
 'old_steer': # previous yaw angle
-'leftLaneProb': # detection probability of the left lane line (between 0-100)
-'rightLaneProb': # detection probability of the right lane line (between 0-100)
-'desiredPathProb': # detection probability of the desired path (between 0-100)
+'leftLaneProb': detection probability of the left lane line (between 0-100)
+'rightLaneProb': detection probability of the right lane line (between 0-100)
+'desiredPathProb': detection probability of the desired path (between 0-100)
 'HasLead': # boolean value indicating the detection of a leading vehicle (False: no front vehicle, True: yes)
-'specifyCruise': # speed control by setSpeed or control by the leading vehicle
-'awarenessStatus': # indicates if the driver is providing human-monitored features (hand-on steering wheel)
-'alertStatus': # alert status (normal, userPrompt, critical) indicating if the system wants to alert the driver
-'alertText1': # alert text 1
-'alertText2': # alert text 2
-'alertSound': # sound notification
-'detectionProbability': # detection probability of the desired path more than 60, less than 30, or between them
-'safety_procedure': # the mitigation strategy must be here
+'specifyCruise': speed control by setSpeed or control by the leading vehicle
+'awarenessStatus': indicates if the driver is providing human-monitored features (hand-on steering wheel)
+'alertStatus': alert status (normal, userPrompt, critical) indicating if the system wants to alert the driver
+'alertText1': alert text 1
+'alertText2': alert text 2
+'alertSound': sound notification
+'detectionProbability': detection probability of the desired path more than 60, less than 30, or between them
+'safety_procedure': the mitigation strategy must be here
 </pre>
 
 <p><b>Python Scripts</b></p>
 <p>This folder contains Python scripts designed to extract OpenPilot behaviors and record videos within the Carla simulator. These scripts are based on the plug-in (bridge) provided by OpenPilot, which can be found at the following <a href="https://github.com/commaai/openpilot/blob/master/tools/sim/bridge.py">link</a>.</p>
+
+<p><b>Demo</b></p>
+<p>The Jupyter notebook available at this <a href="https://git.soton.ac.uk/faa2n19/openpilotcarla/-/blob/master/Demo%20of%20analysing%20OpenPilot%20behaviours%20in%20Carla%20town%204.ipynb">link</a> provides a demonstration of the behavior of the OpenPilot software within the Carla Simulator environment.</p>
+
 
 <p><b>Instructions to run the Jupyter notebook</b></p>
 <ol>
