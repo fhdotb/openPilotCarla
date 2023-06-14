@@ -4,7 +4,7 @@ This repository presents a comprehensive exploration of OpenPilot's Automated La
 
 <p><b>Data</b></p>
 <p>
-This folder contains extracted data and recorded videos from OpenPilot Software [<a href="https://github.com/commaai/openpilot">(1)</a>] in the Carla driving simulator [<a href="https://github.com/carla-simulator/carla">(2)</a>]. Carla's Town 04, which features a highway, was used as the driving environment for exploring and testing OpenPilot's behaviors. This environment provides an ideal setting for the Automated Lane Centering (ALC) functionalities of OpenPilot. Furthermore, the collected data is categorized based on various weather conditions ('clear,' 'rainy') and adjusted vehicle speeds such as 25, 30, and 40 miles per hour.
+This folder contains extracted data and recorded videos from OpenPilot Software [<a href="https://github.com/commaai/openpilot">(1)</a>] in the Carla driving simulator [<a href="https://github.com/carla-simulator/carla">(Carla simulator)</a>]. Carla's Town 04, which features a highway, was used as the driving environment for exploring and testing OpenPilot's behaviors. This environment provides an ideal setting for the Automated Lane Centering (ALC) functionalities of OpenPilot. Furthermore, the collected data is categorized based on various weather conditions ('clear,' 'rainy') and adjusted vehicle speeds such as 25, 30, and 40 miles per hour.
 </p>
 
 <p><b>The structure of datasets (CSV files) is as follows:</b></p>
@@ -36,7 +36,7 @@ This folder contains extracted data and recorded videos from OpenPilot Software 
 
 <p><b>Python Scripts</b></p>
 <p>
-This folder contains Python scripts designed to extract OpenPilot behaviors and record videos within the Carla simulator. These scripts are based on the plug-in (bridge) provided by OpenPilot, which can be found at this <a href="https://github.com/commaai/openpilot/blob/master/tools/sim/bridge.py">link</a>.
+This folder contains Python scripts designed to extract OpenPilot behaviors and record videos within the Carla simulator. These scripts are based on the plug-in (bridge) provided by OpenPilot, which can be found at the <a href="https://github.com/commaai/openpilot/blob/master/tools/sim/bridge.py"> Openpilot bridge</a>.
 </p>
 
 <p><b>Demo</b></p>
