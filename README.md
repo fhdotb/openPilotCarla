@@ -45,8 +45,12 @@ The Jupyter notebook available at this <a href="https://git.soton.ac.uk/faa2n19/
 </p>
 
 
-<p><b>Instructions to run the Jupyter notebook</b></p>
+<p><b>Instructions to Run the Jupyter Notebook</b></p>
 <ol>
   <li>Download Anaconda 3 from <a href="https://www.anaconda.com/products/individual">(3)</a>.</li>
-  <li>Create a new conda environment and install 'environment_root.yml' provided with this project. This can be done with the following command, as explained <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">here</a>: <code>conda env update -n my_env --file ENV.yaml</code></li>
+  <li>Create a new conda environment and install the 'environment_root.yml' file provided with this project. This can be done using the following command, as explained in the <a href="https://conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html">conda documentation</a>: 
+  <ol>
+    <li><code>conda env update -n my_env --file environment_root.yml</code></li>
+  </ol>
+  </li>
 </ol>
